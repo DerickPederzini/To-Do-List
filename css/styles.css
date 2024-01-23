@@ -1,0 +1,102 @@
+*{
+    font-family: 'Days One', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container-to-do{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-123deg ,#dc134c, #000); 
+ }
+
+ .to-doApp{
+    width: 100%;
+    max-width: 560px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px 0px;
+ }
+
+ .to-doApp h2{
+    font-weight: 900;
+    color: #dc134c;
+ }
+
+ .to-doApp h2 img{
+    width: 10%;
+ }
+
+ .text-input{
+    background: #edeef0;
+    border-radius: 30px;
+ }
+
+ input{
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 10px;
+ }
+
+ button{
+    border: none;
+    outline: none;
+    padding: 15px 52px;
+    background  : #dc134c;
+    color: #fff;
+    font-size: 200px;
+    font-weight: 900;
+ }
+
+ ul li{
+    list-style: none;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 50px;
+    font-weight: 900;
+ }
+
+ ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: url(../assets/icons/unchecked.png);
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+ }
+
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    
+}
+
+ul li.checked::before{
+    background-image: url(../assets/icons/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}
